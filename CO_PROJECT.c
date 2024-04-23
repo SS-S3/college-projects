@@ -164,7 +164,7 @@ int main(){
         }    
         printf("Thanks for visiting us\n\n");
 
-        printf(" WANT TO PLACE ANOTHER ORDER? (1 for yes and 0 for no) \n");
+        printf(" WANT TO PLACE ANOTHER ORDER?\n FOR NEXT CUSTOMER RESPONSE ONLY\n (1 for yes and 0 for no) \n");
         scanf("%d", &new);
         if (new){
             continue;
@@ -173,8 +173,14 @@ int main(){
             open = false;
             }
 
+        printf("CLOSING STOCK\n\n");
+        printf("LAYS            ITEM ID : %d,      STOCK: %d\n",lays.itemId,lays.stock);
+        printf("SPRITE          ITEM ID : %d,      STOCK: %d\n",sprite.itemId,sprite.stock);
+        printf("MAGGI           ITEM ID : %d,      STOCK: %d\n",maggi.itemId,maggi.stock);
+        printf("CHOCOLATE       ITEM ID : %d,      STOCK: %d\n",chocolate.itemId,chocolate.stock);
+        printf("CHOWMEIN        ITEM ID : %d,      STOCK: %d\n",chowmein.itemId,chowmein.stock);
+        printf("JUICE           ITEM ID : %d,      STOCK: %d\n",juice.itemId,juice.stock);    
+    
+    
+    return 0;}
     }
-    
-    
-    return 0;
-}
